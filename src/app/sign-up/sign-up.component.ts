@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Customer } from './customer.model';
+import { User } from './user.model';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-sign-up',
@@ -7,11 +8,16 @@ import { Customer } from './customer.model';
   styleUrls: ['./sign-up.component.css']
 })
 export class SignUpComponent implements OnInit {
-  customer = new Customer();
+  user = new User();
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onSubmit(sgForm: NgForm) {
+    console.log(sgForm.form);
+    console.log(`Saved ${JSON.stringify(sgForm.value)}`);
   }
 
 }
