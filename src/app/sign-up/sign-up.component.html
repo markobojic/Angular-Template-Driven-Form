@@ -1,0 +1,156 @@
+<div class="card">
+  <div class="card-header">Sign Up Form!</div>
+
+  <div class="card-body">
+    <form>
+      <div class="row form-group">
+        <label class="col-md-2 col-form-label" for="firstname">First Name</label>
+        <div class="col-md-8">
+          <input
+            type="text"
+            class="form-control"
+            id="firstname"
+            placeholder="First Name (required)">
+        </div>
+      </div>
+
+      <div class="row form-group">
+        <label class="col-md-2 col-form-label" for="lastname">Last Name</label>
+        <div class="col-md-8">
+          <input
+            type="text"
+            class="form-control"
+            id="lastname"
+            placeholder="Last Name (required)">
+        </div>
+      </div>
+
+      <div class="row form-group">
+        <label class="col-md-2 col-form-label" for="email">Email</label>
+        <div class="col-md-8">
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Email (required)">
+        </div>
+      </div>
+
+      <div class="row form-group">
+        <div class="col-md-8">
+          <div class="form-check">
+            <label class="form-check-label">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="sendCatalog"> Send me your catalog
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="row form-group">
+          <label class="col-md-2 col-form-label pt-0">Address Type</label>
+          <div class="col-md-8">
+            <div class="form-check form-check-inline">
+              <label class="form-check-label">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  id="addressType1"
+                  value="home"> Home
+              </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <label class="form-check-label">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  id="addressType1"
+                  value="work"> Work
+              </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <label class="form-check-label">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  id="addressType1"
+                  value="other"> Other
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row form-group">
+        <div class="col-md-2 col-form-label" for="streetAddress1">Street Address 1</div>
+        <div class="col-md-8">
+          <input
+            type="text"
+            class="form-control"
+            id="streetAddress1"
+            placeholder="Street address">
+        </div>
+      </div>
+
+      <div class="row form-group">
+        <div class="col-md-2 col-form-label" for="streetAddress2">Street Address 2</div>
+        <div class="col-md-8">
+          <input
+            type="text"
+            class="form-control"
+            id="streetAddress2"
+            placeholder="Street address (second line)">
+        </div>
+      </div>
+
+      <div class="row form-group">
+        <label class="col-md-2 col-form-label">City, State, Zip Code</label>
+        <div class="col-md-3">
+            <input
+              type="text"
+              class="form-control"
+              id="city"
+              placeholder="City">
+        </div>
+        <div class="col-md-3">
+          <select
+            class="form-control"
+            id="state"
+            name="state">
+            <option
+              value=""
+              disabled
+              selected
+              hidden>Select a State...</option>
+            <option value="AL">Alabama</option>
+            <option value="AK">Alaska</option>
+            <option value="AZ">Arizona</option>
+            <option value="AR">Arkansas</option>
+            <option value="CA">California</option>
+            <option value="CO">Colorado</option>
+            <option value="WI">Wisconsin</option>
+            <option value="WY">Wyoming</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+            <input
+              type="number"
+              class="form-control"
+              id="zip"
+              placeholder="Zip Code">
+        </div>
+      </div>
+
+      <div class="row form-group">
+        <div class="col-md-4">
+          <button
+            type="submit"
+            class="btn btn-primary">Sign Up</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
